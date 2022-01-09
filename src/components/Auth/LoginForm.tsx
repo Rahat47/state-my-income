@@ -60,7 +60,7 @@ const LoginForm = (props: HTMLChakraProps<'form'>) => {
     };
 
     return (
-        <chakra.form onSubmit={handleSubmit} {...props}>
+        <chakra.form onSubmit={handleSubmit} {...props} id='login-form'>
             <Stack spacing='6'>
                 <FormControl id='email' isRequired>
                     <FormLabel>Email address</FormLabel>

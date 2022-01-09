@@ -18,7 +18,9 @@ import Logo from './Logo';
 import RegisterForm from './RegisterForm';
 
 const Auth = () => {
-    const [authMode, setAuthMode] = useState<'login' | 'register'>('login');
+    const [authMode, setAuthMode] = useState<'login' | 'register' | 'forgot'>(
+        'login'
+    );
 
     const handleAuthModeChange = () => {
         setAuthMode(authMode === 'login' ? 'register' : 'login');
@@ -51,7 +53,10 @@ const Auth = () => {
 
     return (
         <Box
-            bg={useColorModeValue('gray.100', 'inherit')}
+            bgGradient={useColorModeValue(
+                'linear(to-br, gray.300, blue.400, cyan.200)',
+                'linear(to-br, gray.900, blue.700, cyan.500)'
+            )}
             minH='100vh'
             py='12'
             px={{ base: '4', lg: '8' }}

@@ -1,4 +1,10 @@
-import { Flex, Icon, FlexProps, Text } from '@chakra-ui/react';
+import {
+    Flex,
+    Icon,
+    FlexProps,
+    Text,
+    useColorModeValue,
+} from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
 import { FcMoneyTransfer } from 'react-icons/fc';
@@ -23,9 +29,9 @@ const Logo = (props: FlexProps) => {
                 as='span'
                 ml={2}
                 fontSize='xl'
-                color='gray.600'
+                color={useColorModeValue('gray.900', 'whiteAlpha.900')}
                 fontWeight='bold'
-                fontFamily='heading'
+                fontFamily='poppins'
             >
                 State My Income
             </Text>

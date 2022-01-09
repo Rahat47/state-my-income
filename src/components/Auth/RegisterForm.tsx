@@ -16,7 +16,7 @@ const RegisterForm = (props: HTMLChakraProps<'form'>) => {
     };
 
     return (
-        <chakra.form onSubmit={handleSubmit} {...props}>
+        <chakra.form onSubmit={handleSubmit} {...props} id='registration-form'>
             <Stack spacing='6'>
                 <FormControl id='name' isRequired>
                     <FormLabel>Your Name</FormLabel>
